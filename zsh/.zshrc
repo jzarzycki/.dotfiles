@@ -69,8 +69,10 @@ ZSH_THEME="mh" # mh, agnoster, intheloop
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git python pip postgres django docker terraform ansible zsh-autosuggestions)
-# to install zsh-autosuggestions exec:
-# clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# Install these plugins:
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # ohmyzsh:
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 ### activate syntax highlighting plugin
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
