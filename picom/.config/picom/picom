@@ -1,0 +1,16 @@
+backend = "glx";
+# glx-swap-method = "undefined";
+
+vsync = true;
+m-front = true;
+glx-swap-method = 2;
+xrender-sync-fence = true;
+glx-no-stencil = true;
+
+# blur
+blur:
+{
+    method = "gaussian";
+    size = 3;
+    deviation = 5.0;
+};
