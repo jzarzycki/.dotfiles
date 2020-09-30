@@ -64,6 +64,7 @@ map <A-g>  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:UltiSnipsExpandTrigger="<A-Enter>"
 let g:UltiSnipsJumpForwardTrigger="<A-Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<A-`>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 
 " VISUAL CONF
 set number
