@@ -1,6 +1,4 @@
 " vundle plugins
-" git clone https://github.com/gmarik/Vundle.vim.git
-" ~/.config/nvim/bundle/Vundle.vim
 set nocompatible
 filetype off
 set rtp+=~/.config/nvim/bundle/Vundle.vim
@@ -27,7 +25,7 @@ Plugin 'Yggdroot/indentLine'			" visualize indentation levels
 " Code autocompletion, snippets, etc.
 Plugin 'vim-syntastic/syntastic'		" syntax checker
 Plugin 'davidhalter/jedi-vim'			" auto completion
-Plugin 'Valloric/YouCompleteMe'			" auto completion (if it stops working, change Plugin to Bundle)
+Plugin 'Valloric/YouCompleteMe'			" auto completion (if it stops working, try changing Plugin to Bundle)
 Plugin 'jiangmiao/auto-pairs'			" auto pair paretheses and quotes
 Plugin 'SirVer/ultisnips'			" makes adding snippets  to YouCompleteMe possible
 Plugin 'honza/vim-snippets'			" snippets for above plugin
