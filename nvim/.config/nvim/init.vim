@@ -87,12 +87,12 @@ nnoremap <C-H> <C-W><C-H>
 " BUFFER 'TABS' CONFIG
 noremap <A-w> :Bclose<CR>
 
-noremap <A-j> :bprevious<CR>
-noremap <A-l> :bnext<CR>
+noremap <A-j> :bprevious!<CR>
+noremap <A-l> :bnext!<CR>
 
 " MIGHT REMAP THIS TO SWITCH TABS:
-noremap <A-h> :bprevious<CR>
-noremap <A-k> :bnext<CR>
+noremap <A-h> :bprevious!<CR>
+noremap <A-k> :bnext!<CR>
 
 " highlight trailing whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
