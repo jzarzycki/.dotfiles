@@ -83,6 +83,22 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# Define default outputs for workspaces
+set $monitor_right "eDP1"
+set $monitor_left "HDMI1"
+
+workspace $ws1 output $monitor_left
+workspace $ws2 output $monitor_left
+workspace $ws3 output $monitor_left
+workspace $ws4 output $monitor_left
+workspace $ws5 output $monitor_left
+
+workspace $ws6 output $monitor_right
+workspace $ws7 output $monitor_right
+workspace $ws8 output $monitor_right
+workspace $ws9 output $monitor_right
+workspace $ws10 output $monitor_right
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -159,6 +175,7 @@ bindsym Print exec flameshot gui
 bindsym $mod+r exec alacritty -e ranger
 bindsym $mod+t exec alacritty -e htop
 bindsym $mod+b exec brave-browser
+bindsym $mod+q exec --no-startup-id ~/bin/mpv-play-clip.sh
 
 ### Visual ###
 # Gaps
@@ -174,6 +191,31 @@ gaps top $top_gap
 # default_border none
 default_floating_border none
 for_window [class="^.*"] border pixel 1
+
+# floating windows
+for_window [class="flameshot"] floating enable
+
+## Plasma fix ##
+
+# kill Plasma Desktop
+exec --no-startup-id wmctrl -c Plasma
+for_window [title="Desktop — Plasma"] kill; floating enable
+
+# fix Plasma fly-outs
+for_window [class="plasmashell"] floating enable
+for_window [class="Plasma"] floating enable
+for_window [title="plasma-desktop"] floating enable
+for_window [class="krunner"] floating enable
+for_window [class="Kmix"] floating enable
+for_window [class="Klipper"] floating enable
+for_window [class="Plasmoidviewer"] floating enable
+for_window [class="yakuake"] floating enable
+
+# fix notification appearing on the second monitor
+assign [class="plasmashell" window_type="notification"] outpu
+
+# fix notification focusing
+no_focus [class="plasmashell"]
 
 
 ### startup scripts ###
