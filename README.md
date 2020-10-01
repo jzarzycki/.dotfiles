@@ -9,7 +9,9 @@ stow --adopt -vt ~ */
 # Installing neovim plugins
 ```sh
 cd nvim/.config/nvim
-git clone https://github.com/VundleVim/Vundle.vim.git bundle
+mkdir bundle
+cd bundle
+git clone https://github.com/VundleVim/Vundle.vim.git
 nvim
 # inside neovim:
 :PluginInstall
@@ -21,8 +23,11 @@ cd YouCompleteMe
 # - node and npm for JS/TS completion
 # - go for golang completion
 # installed
-# in case of problems, theese apt comands fixed python provider problems the last time: https://github.com/ycm-core/YouCompleteMe/issues/1866#issuecomment-242838358
+
+# for arch:
+sudo pacman -S cmake python3 npm go
 pip3 install --user --upgrade pynvim
+# install from AUR package neovim-youcompleteme-core-git
 python3 install.py --clangd-completer --go-completer --ts-completer
 ```
 
