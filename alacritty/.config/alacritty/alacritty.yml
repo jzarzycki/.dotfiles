@@ -176,7 +176,7 @@ schemes:
         primary:
             background: '#282a36'
             foreground: '#f8f8f2'
-        
+
         normal:
             black:   '#000000'
             red:     '#ff5555'
@@ -201,7 +201,7 @@ schemes:
         primary:
             background: '#282828'
             foreground: '#ebdbb2'
-        
+
         normal:
             black:   '#282828'
             red:     '#cc241d'
@@ -226,7 +226,7 @@ schemes:
             primary:
                 background: '#202734'
                 foreground: '#CBCCC6'
-        
+
             # Normal colors
             normal:
                 black: '#191E2A'
@@ -237,7 +237,7 @@ schemes:
                 magenta: '#FFD580'
                 cyan: '#95E6CB'
                 white: '#C7C7C7'
-        
+
             # Bright colors
             bright:
                 black: '#686868'
@@ -278,7 +278,7 @@ schemes:
             primary:
                 background: '#272822'
                 foreground: '#F8F8F2'
-    
+
             normal:
                 black:   '#272822'
                 red:     '#F92672'
@@ -288,7 +288,7 @@ schemes:
                 magenta: '#AE81FF'
                 cyan:    '#A1EFE4'
                 white:   '#F8F8F2'
-    
+
             bright:
                 black:   '#75715E'
                 red:     '#F92672'
