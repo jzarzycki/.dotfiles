@@ -71,7 +71,7 @@ ZSH_THEME="mh" # mh, agnoster, intheloop
 plugins=(git python pip postgres django docker terraform ansible zsh-autosuggestions)
 
 ### activate syntax highlighting plugin
-source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
 
