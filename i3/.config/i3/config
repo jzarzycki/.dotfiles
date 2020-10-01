@@ -174,7 +174,7 @@ bindsym Print exec flameshot gui
 # Key bindings for spawninig windows
 bindsym $mod+r exec alacritty -e ranger
 bindsym $mod+t exec alacritty -e htop
-bindsym $mod+b exec brave-browser
+bindsym $mod+b exec brave
 bindsym $mod+q exec --no-startup-id ~/bin/mpv-play-clip.sh
 
 ### Visual ###
