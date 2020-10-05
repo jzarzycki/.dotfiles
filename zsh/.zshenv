@@ -35,6 +35,10 @@ mkcd () {
 use-amd () {
 	env DRI_PRIME=1 $@
 }
+# overwrite steam definition to use the discrete graphics card
+steam () {
+	use-amd /usr/bin/steam
+}
 cpclip () {
 	xclip -selection clipboard
 }
