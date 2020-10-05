@@ -36,7 +36,6 @@ Plugin 'vim-scripts/indentpython.vim'		" python indentation
 Plugin 'tmhedberg/SimpylFold'			" python code folding
 
 " Syntax plugins
-" Plugin 'nvie/vim-flake8' 			" currently using pylint
 Plugin 'ekalinin/Dockerfile.vim'		" Dockerfile syntax etc.
 
 " Organisation
