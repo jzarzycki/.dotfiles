@@ -77,6 +77,8 @@ source $ZSH/oh-my-zsh.sh
 
 # zsh vi-mode
 bindkey -v
+# edit command in vim
+bindkey -M vicmd v edit-command-line
 
 # User configuration
 
