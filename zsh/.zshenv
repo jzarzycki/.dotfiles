@@ -25,6 +25,8 @@ alias cnfzshe="nvim ~/.zshenv"
 alias ll="ls -alh"
 alias getvol="pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'"
 
+alias gitlog="git log --graph --pretty=format:\"%Cred%an - %ar %Creset%d %n %Cblue %h -%Cgreen %s %n %b %n\""
+
 # functions
 mkcd () {
     mkdir -p $1 &&
