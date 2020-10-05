@@ -113,7 +113,7 @@ autocmd FileType python execute 'source ~/.config/nvim/filetype/python.vim'
 autocmd FileType sh execute 'source ~/.config/nvim/filetype/shell.vim'
 autocmd FileType html execute 'source ~/.config/nvim/filetype/html.vim'
 autocmd FileType css execute 'source ~/.config/nvim/filetype/css.vim'
-autocmd FileType javascript execute 'source ~/.config/nvim/filetype/javascript.vim'
+autocmd FileType javascript execute 'source ~/.config/nvim/filetype/js.vim'
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " NEEDED IN ORDER TO EDIT FILES THROUGH SCP
 autocmd BufRead scp://* :set bt=acwrite
