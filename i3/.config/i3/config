@@ -219,15 +219,4 @@ no_focus [class="plasmashell"]
 
 
 ### startup scripts ###
-# picom compositor
-exec --no-startup-id picom -b --experimental-backends --config ~/.config/picom/picom
-# redshift (screen temperature filter)
-exec --no-startup-id /usr/bin/redshift -l 53.78:18.20
-# Notification daemon (flameshot hangs on copy to clip without it)
-exec --no-startup-id /usr/bin/dunst
-# display scanning script
-exec --no-startup-id ~/bin/screen_check.sh
-# polybar
-exec --no-startup-id bash ~/bin/launch_polybar.sh
-# Set wallpaper
-exec --no-startup-id /usr/bin/xwallpaper --zoom ~/Pictures/wp
+exec --no-startup-id ~/bin/startup.sh
