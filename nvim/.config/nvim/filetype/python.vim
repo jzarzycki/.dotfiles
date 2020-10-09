@@ -15,7 +15,7 @@ let g:ycm_python_interpreter_path = 'python'
 let python_highlight_all=1
 
 " special key bindings
-nnoremap <F5> :w \| !python3 %<CR>
+nnoremap <F5> :if &mod \| w \| endif \| !python3 %<CR>
 nnoremap <F8> :!pylint %<CR>
 nnoremap <F9> :%!autopep8 %<CR>
 
