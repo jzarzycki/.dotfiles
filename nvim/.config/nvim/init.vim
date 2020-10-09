@@ -57,6 +57,7 @@ let g:SimpylFold_docstring_preview=1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='fruit_punch' "murmur/wombat/bubblegum/minimalist/fruit_punch
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 let g:ycm_autoclose_preview_window_after_completion=1
 map <A-g>  :YcmCompleter GoToDefinitionElseDeclaration<CR>
