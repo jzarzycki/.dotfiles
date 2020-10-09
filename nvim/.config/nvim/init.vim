@@ -1,3 +1,6 @@
+" needed, so python provider will work inside a virtualenv
+let g:python3_host_prog='/usr/bin/python'
+
 " vundle plugins
 set nocompatible
 filetype off
