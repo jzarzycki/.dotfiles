@@ -19,8 +19,6 @@ alias cddesk="cd ~/Desktop"
 # make a my_conf script, that shows a menu for selecting a conf file
 # should be easier after I make a config git repo using stow
 # find PATH_TO_REPO -type f | fzf
-alias cnfzshr="nvim ~/.zshrc"
-alias cnfzshe="nvim ~/.zshenv"
 
 alias ll="ls -alh"
 alias getvol="pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'"
