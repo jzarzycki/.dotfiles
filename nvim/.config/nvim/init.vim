@@ -99,8 +99,6 @@ noremap <A-k> :bnext!<CR>
 " highlight trailing whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
 match BadWhitespace /\s\+$/
-" OLD VERSION:
-" autocmd FileType python,c,cpp match BadWhitespace /\s\+$/
 
 " SPELLCHECKER
 map <F5> :setlocal spell! spelllang=pl<CR>
