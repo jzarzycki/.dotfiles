@@ -168,14 +168,14 @@ bindsym XF86AudioStop exec playerctl pause
 # bindsym XF86AudioPlay exec /home/janek/bin/record_screen.sh
 # bindsym XF86AudioStop exec kill $(pgrep ffmpeg)
 
-# Print screen
+# My key bindings
 bindsym Print exec flameshot gui
-
-# Key bindings for spawninig windows
-bindsym $mod+r exec alacritty -e ranger
+bindsym $mod+r exec floating.sh alacritty -e ranger
 bindsym $mod+t exec alacritty -e htop
 bindsym $mod+b exec brave
-bindsym $mod+q exec --no-startup-id ~/bin/mpv-play-clip.sh
+# bindsym $mod+Q exec --no-startup-id ~/bin/mpv-play-clip.sh
+bindsym $mod+m exec bluetoothctl connect 78:44:05:B8:2D:02
+bindsym $mod+q exec ~/bin/get_emoji.sh
 
 ### Visual ###
 # Gaps
