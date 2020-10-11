@@ -24,6 +24,8 @@ alias ll="ls -alh"
 alias getvol="pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'"
 
 alias gitlog="git log --graph --pretty=format:\"%Cred%an - %ar %Creset%d %n %Cblue %h -%Cgreen %s %n %b %n\""
+alias dmenu="dmenu -nf '#E6DB74' -nb '#2D2A2E' -sb '#F92672' -sf '#2D2A2E' -fn 'DejaVu Sans Mono-15'"
+
 
 # functions
 mkcd () {
