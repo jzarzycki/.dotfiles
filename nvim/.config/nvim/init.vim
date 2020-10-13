@@ -14,7 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'		" file explorer
 Plugin 'rbgrouleff/bclose.vim'			" dependency for ranger, close buffers like in IDE
 Plugin 'francoiscabrol/ranger.vim'		" ranger integration in vim
-Plugin 'jreybert/vimagit'			" git integration (https://github.com/jreybert/vimagit#tldr) TEST OUT!!!
+Plugin 'jreybert/vimagit'			" git integration
 
 " Visual helpers
 Plugin 'vim-airline/vim-airline'		" powerline bar
