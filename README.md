@@ -1,7 +1,7 @@
 # My dotfiles
 In order to use:
 ```sh
-git clone http://www.github.com/jzarzycki/.dotfiles
+git clone https://github.com/jzarzycki/.dotfiles.git
 cd .dotfiles
 stow --adopt -vt ~ */
 ```
