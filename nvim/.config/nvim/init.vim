@@ -30,7 +30,7 @@ Plugin 'Valloric/YouCompleteMe'			" auto completion (if it stops working, try ch
 Plugin 'jiangmiao/auto-pairs'			" auto pair paretheses and quotes
 Plugin 'SirVer/ultisnips'			" makes adding snippets  to YouCompleteMe possible
 Plugin 'honza/vim-snippets'			" snippets for above plugin
-"Plugin 'tpope/vim-surround'			" inserting, changing, etc. around  selection - TEST OUT!!!
+Plugin 'tpope/vim-surround'			" inserting, changing, etc. around  selection - won't work with '.', unless repeat.vim is installed
 
 " Python plugins
 Plugin 'vim-scripts/indentpython.vim'		" python indentation
