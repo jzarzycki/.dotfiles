@@ -12,10 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 " Integration of file explorers, git, etc
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'		" file explorer
-"Plugin 'kien/ctrlp.vim'			" search for a file
 Plugin 'rbgrouleff/bclose.vim'			" dependency for ranger, close buffers like in IDE
 Plugin 'francoiscabrol/ranger.vim'		" ranger integration in vim
-"Plugin 'tpope/vim-fugitive'			" git integration (compare with vimagit)
 Plugin 'jreybert/vimagit'			" git integration (https://github.com/jreybert/vimagit#tldr) TEST OUT!!!
 
 " Visual helpers
@@ -43,7 +41,6 @@ Plugin 'ekalinin/Dockerfile.vim'		" Dockerfile syntax etc.
 
 " Organisation
 Plugin 'vimwiki/vimwiki'			" knowledge base, organisation, etc. <leader>ww by default
-Plugin 'jkramer/vim-checkbox'			" toggling checkboxes with <leader>tt by default
 
 call vundle#end()
 filetype plugin indent on
