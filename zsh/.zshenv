@@ -10,22 +10,11 @@ VISUAL=/usr/bin/nvim; export VISUAL
 EDITOR=/usr/bin/nvim; export EDITOR
 alias vim="nvim"
 
-# my aliases
-alias cdow="cd ~/Downloads"
-alias cdcode="cd ~/code"
-alias cdbin="cd ~/bin"
-alias cddesk="cd ~/Desktop"
-
-# make a my_conf script, that shows a menu for selecting a conf file
-# should be easier after I make a config git repo using stow
-# find PATH_TO_REPO -type f | fzf
-
 alias ll="ls -alh"
 alias getvol="pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'"
 
 alias gitlog="git log --graph --pretty=format:\"%Cred%an - %ar %Creset%d %n %Cblue %h -%Cgreen %s %n %b %n\""
 alias dmenu="dmenu -nf '#E6DB74' -nb '#2D2A2E' -sb '#F92672' -sf '#2D2A2E' -fn 'DejaVu Sans Mono-15'"
-
 
 # functions
 mkcd () {
