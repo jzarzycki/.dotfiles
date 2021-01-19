@@ -79,6 +79,8 @@ source $ZSH/oh-my-zsh.sh
 bindkey -v
 # edit command in vim
 bindkey -M vicmd v edit-command-line
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
 
 # User configuration
 

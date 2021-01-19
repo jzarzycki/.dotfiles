@@ -10,13 +10,16 @@ VISUAL=/usr/bin/nvim; export VISUAL
 EDITOR=/usr/bin/nvim; export EDITOR
 alias vim="nvim"
 
-alias ll="ls -alh"
 alias getvol="pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'"
+alias ll="ls -alh"
 
+# format aliases
 alias gitlog="git log --graph --pretty=format:\"%Cred%an - %ar %Creset%d %n %Cblue %h -%Cgreen %s %n %b %n\""
 alias dmenu="dmenu -nf '#E6DB74' -nb '#2D2A2E' -sb '#F92672' -sf '#2D2A2E' -fn 'DejaVu Sans Mono-15'"
+alias fzf="fzf --height 40% --layout reverse --info inline --border --preview 'file -b {}' --preview-window down:1:noborder"
 
 # functions
+vf() { fzf | xargs -r -I % $EDITOR % ; }
 mkcd () {
     mkdir -p $1 &&
     cd -P $1 # -P to follow symlinks
@@ -49,5 +52,8 @@ setwallpaper () {
     wal $@ -ni $wal_file
 }
 
-# pywal terminal colors
-# (cat ~/.cache/wal/sequences &)
+# exports
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#f0f0f0,hl:#66d9ef --color=fg+:#ffffff,hl+:#78dce8 --color=info:#e6db74,prompt:#f92672,pointer:#ae81ff --color=marker:#a6e22e,spinner:#ae81ff,header:#87afaf'
+# use ripgrep for fzf file search
+export FZF_DEFAULT_COMMAND='rg --files'
+# export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
