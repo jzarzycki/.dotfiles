@@ -75,6 +75,7 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 
 map <leader>vp :VimuxPromptCommand<CR>
 map <leader>v% :VimuxPromptCommand(" " . expand('%:~'))<CR><C-Left><Left> " run on current file
+map <leader>v. :VimuxPromptCommand(" " . expand('%:~:h'))<CR><C-Left><Left> " run on current dir
 map <leader>vl :VimuxRunLastCommand<CR>
 map <leader>vi :VimuxInspectRunner<CR>
 map <leader>vz :VimuxZoomRunner<CR>
