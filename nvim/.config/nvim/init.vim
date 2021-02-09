@@ -18,6 +18,7 @@ Plugin 'benmills/vimux'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'		" file explorer
 Plugin 'jreybert/vimagit'			" git integration
+Plugin 'vimwiki/vimwiki'			" knowledge base, notes
 
 " Visual helpers
 Plugin 'vim-airline/vim-airline'		" powerline bar
@@ -42,9 +43,6 @@ Plugin 'tmhedberg/SimpylFold'			" python code folding
 
 " Syntax plugins
 Plugin 'ekalinin/Dockerfile.vim'		" Dockerfile syntax etc.
-
-" Organisation
-Plugin 'vimwiki/vimwiki'			" knowledge base, organisation, etc. <leader>ww by default
 
 call vundle#end()
 filetype plugin indent on
