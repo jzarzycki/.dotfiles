@@ -118,6 +118,16 @@ match BadWhitespace /\s\+$/
 map <F5> :setlocal spell! spelllang=pl<CR>
 map <F6> :setlocal spell! spelllang=en_us<CR>
 
+" If buffer is unmodified, automatically reload it, when it changes
+set autoread
+" By default, CursorHold is triggered after the cursor remains still for 4 seconds, and is configurable via updatetime.
+au CursorHold,CursorHoldI * checktime " reload on cursor stop
+au FocusGained,BufEnter * :checktime " reload on buffer change or terminal focus
+" To have FocusGained (see above) work in plain vim, inside a terminal emulator (Xterm, tmux, etc)
+" install the plugin: vim-tmux-focus-events (https://github.com/tmux-plugins/vim-tmux-focus-events)
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+
 " KEY BINDINGS
 "inoremap <A-Tab> <Esc>/<++><Enter>"_c4l " no longer needed when I move my
 " snippets to ultisnips. Tutorial here:
