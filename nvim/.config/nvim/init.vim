@@ -9,6 +9,11 @@ call vundle#begin("~/.config/nvim/bundle")
 
 Plugin 'gmarik/Vundle.vim'
 
+" tmux integration
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'benmills/vimux'
+
 " Integration of file explorers, git, etc
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'		" file explorer
@@ -59,6 +64,9 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='fruit_punch' "murmur/wombat/bubblegum/minimalist/fruit_punch
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+" needed for auto tmuxline load on new tmux session start
+let g:airline#extensions#tmuxline#enabled = 1
+let airline#extensions#tmuxline#snapshot_file = "~/.tmux-status.conf"
 
 let g:ycm_autoclose_preview_window_after_completion=1
 map <A-g>  :YcmCompleter GoToDefinitionElseDeclaration<CR>
@@ -67,6 +75,11 @@ let g:UltiSnipsExpandTrigger="<A-Enter>"
 let g:UltiSnipsJumpForwardTrigger="<A-Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<A-`>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
+
+map <leader>vp :VimuxPromptCommand<CR>
+map <leader>vl :VimuxRunLastCommand<CR>
+map <leader>vi :VimuxInspectRunner<CR>
+map <leader>vz :VimuxZoomRunner<CR>
 
 " VISUAL CONF
 set number
