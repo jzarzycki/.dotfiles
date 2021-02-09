@@ -17,12 +17,12 @@ Plugin 'benmills/vimux'
 " Integration of file explorers, git, etc
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'		" file explorer
-Plugin 'rbgrouleff/bclose.vim'			" dependency for ranger, close buffers like in IDE
 Plugin 'jreybert/vimagit'			" git integration
 
 " Visual helpers
 Plugin 'vim-airline/vim-airline'		" powerline bar
 Plugin 'vim-airline/vim-airline-themes'		" powerline themes
+Plugin 'rbgrouleff/bclose.vim'			" prevents vim from exiting, when closing the last buffer
 Plugin 'powerline/powerline-fonts'		" powerline fonts
 Plugin 'ap/vim-css-color'			" visualize colors in css
 Plugin 'Yggdroot/indentLine'			" visualize indentation levels
