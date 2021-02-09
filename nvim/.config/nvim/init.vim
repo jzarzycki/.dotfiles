@@ -47,6 +47,10 @@ filetype plugin indent on
 
 
 " PLUGIN CONF
+let g:vimwiki_list = [{'path': '~/.vimwiki'}]
+let g:vimwiki_ext = '.md'	" set extension to .md
+let g:vimwiki_global_ext = 0	" make sure vimwiki doesn't own all .md files
+
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 "let g:syntastic_check_on_open = 1 " generates too much lag on file open
 let g:SimpylFold_docstring_preview=1
