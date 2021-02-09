@@ -80,6 +80,8 @@ map <leader>vl :VimuxRunLastCommand<CR>
 map <leader>vi :VimuxInspectRunner<CR>
 map <leader>vz :VimuxZoomRunner<CR>
 
+nnoremap <leader>m :MagitOnly<CR>
+
 " VISUAL CONF
 set number
 set relativenumber
