@@ -74,6 +74,7 @@ let g:UltiSnipsJumpBackwardTrigger="<A-`>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 
 map <leader>vp :VimuxPromptCommand<CR>
+map <leader>v. :VimuxPromptCommand(" " . expand('%:~'))<CR><C-Left><Left>
 map <leader>vl :VimuxRunLastCommand<CR>
 map <leader>vi :VimuxInspectRunner<CR>
 map <leader>vz :VimuxZoomRunner<CR>
