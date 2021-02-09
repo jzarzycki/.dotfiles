@@ -95,6 +95,9 @@ set clipboard=unnamed
 set splitbelow
 set splitright
 
+nnoremap vv :vsp<CR>
+nnoremap vV :sp<CR>
+
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
