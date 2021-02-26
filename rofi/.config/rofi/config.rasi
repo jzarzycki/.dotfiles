@@ -3,5 +3,5 @@ configuration {
   theme: "Monokai";
   font: "noto-emoji 10";
   combi-modi: "window,drun,ssh";
-  terminal: "/usr/bin/alacritty";
+  terminal: "/usr/bin/konsole";
 }
