@@ -4,4 +4,8 @@ configuration {
   font: "noto-emoji 10";
   combi-modi: "window,drun,ssh";
   terminal: "/usr/bin/konsole";
+  kb-accept-entry: "Return,KP_Enter";
+  kb-remove-to-eol: "";
+  kb-row-up: "Control+k";
+  kb-row-down: "Control+j";
 }
