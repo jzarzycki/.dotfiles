@@ -1,0 +1,5 @@
+[user]
+	email = jzarzycki97@gmail.com
+	name = Jan Zarzycki
+[alias]
+	hist = log --graph --pretty=format:\"%Cred%an - %ar %Creset%d %n %Cblue %h -%Cgreen %s %n %b %n\"
