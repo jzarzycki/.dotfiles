@@ -11,24 +11,26 @@ EDITOR=/usr/bin/nvim; export EDITOR
 alias vim="nvim"
 
 alias getvol="pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'"
-alias ll="ls -alh"
 
-# format aliases
-alias gitlog="git log --graph --pretty=format:\"%Cred%an - %ar %Creset%d %n %Cblue %h -%Cgreen %s %n %b %n\""
-alias dmenu="dmenu -nf '#E6DB74' -nb '#2D2A2E' -sb '#F92672' -sf '#2D2A2E' -fn 'DejaVu Sans Mono-15'"
+# option aliases
+alias ll="ls -alh"
 alias fzf="fzf --height 40% --layout reverse --info inline --border --preview 'file -b {}' --preview-window down:1:noborder"
 
 # functions
+vman() { man $@ >/dev/null && nvim <(man $@) }
+
 vf() { fzf | xargs -r -I % $EDITOR % ; }
+
 mkcd () {
     mkdir -p $1 &&
     cd -P $1 # -P to follow symlinks
 }
+
 use-amd () {
 	env DRI_PRIME=1 $@
 }
-# overwrite steam definition to use the discrete graphics card
-steam () {
+
+steam () { # overwrite steam definition to use the discrete graphics card
 	use-amd /usr/bin/steam
 }
 cpclip () {
