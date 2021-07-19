@@ -99,3 +99,7 @@ source /usr/share/fzf/key-bindings.zsh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Turn off bell beeping sounds
+unsetopt BEEP
+# Turn off autocomplete beeps
+# unsetopt LIST_BEEP
